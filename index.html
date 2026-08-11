@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+   <body>
+    
+      <h2> Mini Bot </h2>
+      <input id="perguntar" placeholder="digite oi ou tchau...">
+      <button onclick="responder()">Enviar</button>
+      <h3 id="resposta"></h3>
+
+      <script>
+        function responder() {
+            let texto = document.getElementById('perguntar').value.toLowerCase();
+            let bot = "Não entendi...";
+
+            if (texto.includes("oi")) bot = "Olá! Tudo bem?";
+            if (texto.includes("tchau")) bot = "Até logo!";
+        }
+    </sript>
+
+</body>
+
+</html>
